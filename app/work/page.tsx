@@ -69,68 +69,71 @@ const ProjectSection = () => {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          {projects.map((project) => (
-            <article
-              key={project?.id}
-              className="group relative overflow-hidden rounded-xl border border-gray-800/50 bg-gray-900/50 backdrop-blur-sm transition-all duration-300 hover:border-purple-500/30 hover:bg-gray-900/80"
-            >
-              {/* Project Image */}
-              <div className="relative h-64 overflow-hidden">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent" />
-              </div>
+          {projects.map(
+            (project) =>
+              project && (
+                <article
+                  key={project?.id}
+                  className="group relative overflow-hidden rounded-xl border border-gray-800/50 bg-gray-900/50 backdrop-blur-sm transition-all duration-300 hover:border-purple-500/30 hover:bg-gray-900/80"
+                >
+                  {/* Project Image */}
+                  <div className="relative h-64 overflow-hidden">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent" />
+                  </div>
 
-              {/* Content */}
-              <div className="space-y-4 p-6">
-                <h3 className="text-2xl font-semibold text-gray-100">
-                  {project.title}
-                </h3>
+                  {/* Content */}
+                  <div className="space-y-4 p-6">
+                    <h3 className="text-2xl font-semibold text-gray-100">
+                      {project.title}
+                    </h3>
 
-                <p className="text-sm leading-relaxed text-gray-400">
-                  {project.description}
-                </p>
+                    <p className="text-sm leading-relaxed text-gray-400">
+                      {project.description}
+                    </p>
 
-                {/* Tags */}
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full border border-gray-700/50 bg-gray-800/50 px-3 py-1 text-xs text-gray-300"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+                    {/* Tags */}
+                    <div className="flex flex-wrap gap-2">
+                      {project.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="rounded-full border border-gray-700/50 bg-gray-800/50 px-3 py-1 text-xs text-gray-300"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
 
-                {/* Links */}
-                <div className="flex items-center gap-4 pt-4">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 text-gray-400 transition-colors duration-300 hover:text-white"
-                  >
-                    <Github className="h-5 w-5" />
-                  </a>
+                    {/* Links */}
+                    <div className="flex items-center gap-4 pt-4">
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 text-gray-400 transition-colors duration-300 hover:text-white"
+                      >
+                        <Github className="h-5 w-5" />
+                      </a>
 
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 text-gray-400 transition-colors duration-300 hover:text-white"
-                  >
-                    <ExternalLink className="h-5 w-5" />
-                  </a>
-                </div>
-              </div>
-            </article>
-          ))}
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 text-gray-400 transition-colors duration-300 hover:text-white"
+                      >
+                        <ExternalLink className="h-5 w-5" />
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              ),
+          )}
         </div>
       </div>
     </section>
