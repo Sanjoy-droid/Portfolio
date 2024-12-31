@@ -11,7 +11,7 @@ const ContactSection = () => {
         <div className="absolute -bottom-48 -left-48 h-96 w-96 rounded-full bg-blue-500/10 blur-3xl" />
       </div>
 
-      <div className="container relative mx-auto max-w-4xl">
+      <div className="container relative max-w-4xl mx-6">
         {/* Header */}
         <div className="mb-16 space-y-4 text-center">
           <h1 className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-4xl font-bold text-transparent md:text-5xl">

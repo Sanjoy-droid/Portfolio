@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <section className="container mx-32 px-4 py-12 md:py-24">
+    <section className="container ml-16 px-4 py-12 md:py-24">
       <div className="flex flex-col items-center gap-8 md:flex-row md:gap-16">
         {/* Image Container with subtle animations and effects */}
         <div className="group relative">
@@ -70,7 +70,7 @@ const page = () => {
 
       <div className="pt-4">
         <Link href="/work">
-          <button className="transform rounded-lg bg-gradient-to-r from-indigo-500 to-violet-500 px-6 py-3 text-white transition duration-300 hover:scale-105 hover:from-blue-500 hover:to-indigo-600">
+          <button className="transform rounded-lg bg-gradient-to-r from-indigo-500 to-violet-500 px-6 py-3 text-white transition duration-300 hover:scale-105 hover:from-blue-500 hover:to-indigo-600 mx-16">
             View My Work
           </button>
         </Link>

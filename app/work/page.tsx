@@ -15,16 +15,41 @@ const projects = [
   },
   {
     id: 2,
-    title: "Brain Buddy",
-    description: "[brief description ]",
+    title: "Zomato Clone",
+    description:
+      "A MERN stack project replicating key features of Zomato, including custom filters, bookmarking, and user authentication.",
+    tags: ["ReactJS", "Javascript", "Tailwind", "MERN Stack"],
+
+    image: "/images/projects/project-2.png",
+    github: "https://github.com/Sanjoy-droid/Zomato-Clone-using-MERN-Stack",
+    demo: "https://zomato-clone-using-mern-stack.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Reddit Clone",
+    description:
+      "A full-stack application resembling Reddit, facilitating user interaction through posting, voting to posts. Includes robust authentication, posting functionalities.",
+    tags: ["ReactJS", "Javascript", "Tailwind", "MERN Stack"],
+
+    image: "/images/projects/project-4.png",
+    github: "https://github.com/Sanjoy-droid/Reddit-Clone-using-MERN-Stack",
+    demo: "https://reddit-clone-using-mern-stack.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "Crowd Nest",
+    description:
+      "A crowdfunding initiative dedicated to tree plantation projects aims to combat climate change and promote environmental sustainability by supporting reforestation, urban greening, and community-driven afforestation efforts.",
     tags: ["NextJS", "TypeScript", "Tailwind"],
 
-    image: "/images/projects/project-1.png",
-    github: "https://github.com",
-    demo: "https://demo.com",
+    image: "/images/projects/project-5.png",
+    github: "https://github.com/Sanjoy-droid/CrowdNest",
+    demo: "https://github.com/Sanjoy-droid/CrowdNest",
   },
 
   // Add more projects as needed
+
+  ,
 ];
 
 const ProjectSection = () => {
@@ -33,7 +58,7 @@ const ProjectSection = () => {
       <div className="container mx-auto max-w-6xl px-4">
         {/* Section Header */}
         <div className="mb-16 space-y-4 mx-20">
-          <h2 className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-4xl font-bold text-transparent">
+          <h2 className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-4xl font-bold text-transparent pt-6">
             Featured Works
           </h2>
           <p className="max-w-2xl text-gray-400">
@@ -46,7 +71,7 @@ const ProjectSection = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {projects.map((project) => (
             <article
-              key={project.id}
+              key={project?.id}
               className="group relative overflow-hidden rounded-xl border border-gray-800/50 bg-gray-900/50 backdrop-blur-sm transition-all duration-300 hover:border-purple-500/30 hover:bg-gray-900/80"
             >
               {/* Project Image */}
@@ -107,8 +132,6 @@ const ProjectSection = () => {
             </article>
           ))}
         </div>
-
-        {/* View All Projects Link */}
       </div>
     </section>
   );
