@@ -4,14 +4,14 @@ import { Mail, Linkedin, Github, Twitter } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section className="relative min-h-screen px-4 py-20">
+    <section className="relative min-h-screen px-4 py-20 ">
       {/* Background Elements */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -right-48 -top-48 h-96 w-96 rounded-full bg-purple-500/10 blur-3xl" />
         <div className="absolute -bottom-48 -left-48 h-96 w-96 rounded-full bg-blue-500/10 blur-3xl" />
       </div>
 
-      <div className="container relative max-w-4xl mx-6">
+      <div className="container relative max-w-4xl lg:mx-4">
         {/* Header */}
         <div className="mb-16 space-y-4 text-center">
           <h1 className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-4xl font-bold text-transparent md:text-5xl">
@@ -24,10 +24,10 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid items-start gap-16 md:grid-cols-5">
+        <div className="grid items-start gap-10 md:grid-cols-5">
           {/* Contact Info */}
           <div className="space-y-8 md:col-span-2">
-            <div className="w-[16rem] rounded-2xl border border-gray-800/50 bg-gray-900/50 p-6 backdrop-blur-sm">
+            <div className="w-72 px-16 rounded-2xl border border-gray-800/50 bg-gray-900/50 py-6 backdrop-blur-sm">
               <h3 className="mb-4 text-xl font-semibold">
                 Contact Information
               </h3>
@@ -64,8 +64,8 @@ const ContactSection = () => {
           </div>
 
           {/* Contact Form */}
-          <form className="space-y-6 md:col-span-3">
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <form className=" space-y-6 md:col-span-3 ">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div>
                 <input
                   type="text"

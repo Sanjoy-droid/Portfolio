@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <section className="container ml-16 px-4 py-12 md:py-24">
-      <div className="flex flex-col items-center gap-8 md:flex-row md:gap-16">
+    <section className="container px-4 py-12 md:mx-24 md:py-24 ">
+      <div className="flex flex-col items-center  gap-8 md:flex-row md:gap-16 ">
         {/* Image Container with subtle animations and effects */}
         <div className="group relative">
           <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 opacity-25 blur transition duration-1000 group-hover:opacity-40"></div>
@@ -53,9 +53,16 @@ const page = () => {
               "TypeScript",
               "Next.js",
               "Tailwind",
-              "MERN",
+              "MongoDB",
+              "ExpressJS",
+              "REST APIs",
               "Git",
               "Github",
+              "Tmux",
+              "NeoVim",
+              "Linux",
+              "Bootstrap",
+              "Postman",
             ].map((skill) => (
               <span
                 key={skill}
@@ -68,9 +75,9 @@ const page = () => {
         </div>
       </div>
 
-      <div className="pt-4">
+      <div className="pt-4 flex justify-center md:justify-start md:pl-16 ">
         <Link href="/work">
-          <button className="transform rounded-lg bg-gradient-to-r from-indigo-500 to-violet-500 px-6 py-3 text-white transition duration-300 hover:scale-105 hover:from-blue-500 hover:to-indigo-600 mx-16">
+          <button className="transform rounded-lg bg-gradient-to-r from-indigo-500 to-violet-500 px-6 py-3 text-white transition duration-300 hover:scale-105 hover:from-blue-500 hover:to-indigo-600">
             View My Work
           </button>
         </Link>

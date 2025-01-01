@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Moon, Sun, Menu, Code2, Send, User2 } from "lucide-react";
+import { Moon, Sun, Menu, Code2, Send, User2, CircleX } from "lucide-react";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -89,11 +89,8 @@ const Header = () => {
       >
         <div className="container mx-auto px-4 py-20">
           <div className="flex flex-col gap-8">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="p-2 md:hidden"
-            >
-              <Menu className="h-6 w-6" />
+            <button onClick={() => setIsOpen(!isOpen)} className=" md:hidden">
+              <CircleX className=" size-[30px] text-red-600" />
             </button>
             {navItems.map(({ id, href, label, icon: Icon }) => {
               const isActive = pathname === href;
