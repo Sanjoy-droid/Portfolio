@@ -4,6 +4,17 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    id: 0,
+    title: "Brain Buddy",
+    description:
+      " Advanced AI chatbot. Powered by cutting-edge technology for human-like interactions.",
+    tags: ["NextJS", "TypeScript", "Tailwind", "Gemini", "lucide-react"],
+
+    image: "/images/projects/project-0.png",
+    github: "https://github.com/Sanjoy-droid/Brain-Buddy-AI",
+    demo: "https://brain-buddy-eight.vercel.app/",
+  },
+  {
     id: 1,
     title: "Web Wisdom AI",
     description: " AI-Powered Contextual Chat for Websites.",
