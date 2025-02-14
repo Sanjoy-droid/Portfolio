@@ -25,12 +25,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className="h-full">
+      <body className="h-full overflow-hidden antialiased">
         <Header />
-        <main className="grow">{children}</main>
+        <main
+          className="grow h-screen overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 
+                        scrollbar-track-gray-100 hover:scrollbar-thumb-gray-400 
+                        dark:scrollbar-thumb-gray-700 dark:scrollbar-track-gray-800"
+        >
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

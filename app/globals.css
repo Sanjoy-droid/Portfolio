@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.scrollbar-thin {
+  scrollbar-width: thin; /* For Firefox */
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;

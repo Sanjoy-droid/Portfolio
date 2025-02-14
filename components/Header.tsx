@@ -12,11 +12,16 @@ const Header = () => {
 
   // Handle scroll effect
   useEffect(() => {
+    const mainElement = document.querySelector("main");
+
+    if (!mainElement) return;
+
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      setScrolled(mainElement.scrollTop > 20);
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    mainElement.addEventListener("scroll", handleScroll);
+    return () => mainElement.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navItems = [
