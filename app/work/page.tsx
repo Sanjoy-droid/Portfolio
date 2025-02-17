@@ -85,7 +85,7 @@ const ProjectSection = () => {
               project && (
                 <article
                   key={project?.id}
-                  className="group relative overflow-hidden rounded-xl border border-gray-800/50 bg-gray-900/50 backdrop-blur-sm transition-all duration-300 hover:border-purple-500/30 hover:bg-gray-900/80"
+                  className="group relative overflow-hidden rounded-xl border-[0.5px] border-gray-800/50 bg-gray-900/50 backdrop-blur-sm transition-all duration-300 hover:border-indigo-500  hover:bg-gray-900/80"
                 >
                   {/* Project Image */}
                   <div className="relative h-64 overflow-hidden">
