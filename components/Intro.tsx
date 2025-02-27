@@ -5,7 +5,7 @@ import Image from "next/image";
 import authorImage from "@/public/images/authors/dp.jpeg";
 import Link from "next/link";
 import BlurText from "@/app/uiComponents/BlurText";
-
+import ShinyText from "@/app/uiComponents/ShinyText";
 
 
 
@@ -42,7 +42,7 @@ const page = () => {
             <h2 className="text-sm font-medium uppercase tracking-wide text-blue-500 ml-4">
               Welcome to my portfolio
             </h2>
-            <h1 className="bg-gradient-to-r from-gray-100 to-gray-300 bg-clip-text text-4xl font-bold  md:text-5xl">
+            <h1 className="bg-gradient-to-r from-gray-100 to-gray-300 bg-clip-text text-4xl font-bold  md:text-5xl flex justify-center items-center">
               <BlurText
                 text="
             Hey, I&#39;m Sanjoy.
@@ -54,7 +54,6 @@ const page = () => {
               />
             </h1>
           </div>
-
           <p className="max-w-2xl text-lg leading-relaxed text-gray-400 md:text-xl">
             I&#39;m a FullStack Software Engineer passionate about building
             exceptional digital experiences. I&#39;m eager to learn new
@@ -62,6 +61,7 @@ const page = () => {
           </p>
 
           {/* Skills badges */}
+
           <div className="flex flex-wrap justify-center gap-2 md:justify-start">
             {[
               "React",
@@ -80,27 +80,23 @@ const page = () => {
               "Bootstrap",
               "Postman",
             ].map((skill) => (
-              <span
+              <ShinyText
                 key={skill}
-                className="rounded-full border border-gray-700/50 bg-gray-800/50 px-3 py-1 text-sm text-gray-300 transition duration-300 hover:border-blue-500/50"
-              >
-                {skill}
-              </span>
+                text={skill}
+                disabled={false}
+                speed={1}
+                className="rounded-full border border-gray-700/50 bg-gradient-to-r from-gray-800/50 via-gray-700/50 to-gray-800/50 px-3 py-1 text-sm text-gray-300 transition-all duration-500 hover:border-blue-500/50 hover:bg-gradient-to-r hover:from-blue-800/50 hover:via-blue-700/50 hover:to-blue-800/50 hover:text-white hover:shadow-lg hover:shadow-blue-500/20"
+              />
             ))}
           </div>
         </div>
       </div>
-
       <div className="pt-4 flex justify-center md:justify-start md:pl-16 ">
         <Link href="/work">
 
           <button className="transform rounded-lg bg-gradient-to-r from-indigo-500 to-violet-500 px-6 py-3 text-white transition duration-300 hover:scale-105 hover:from-blue-500 hover:to-indigo-600">
             View My Work
           </button>
-
-
-
-
         </Link>
       </div>
     </section>
