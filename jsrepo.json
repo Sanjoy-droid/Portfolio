@@ -1,0 +1,20 @@
+{
+  "$schema": "https://unpkg.com/jsrepo@1.40.1/schemas/project-config.json",
+  "repos": [
+    "https://reactbits.dev/ts/tailwind",
+    "github/ieedan/std",
+    "github/ieedan/std"
+  ],
+  "includeTests": false,
+  "watermark": true,
+  "formatter": "prettier",
+  "configFiles": {},
+  "paths": {
+    "*": "./app/blocks",
+    "TextAnimations": "./app/uiComponents/TextAnimations",
+    "Components": "./app/BitsComponents/TextAnimations",
+    "Backgrounds": "./app/BitsComponents/Background",
+    "Animations": "./app/BitsComponents/TextAnimations",
+    "ts": "./app/ts"
+  }
+}

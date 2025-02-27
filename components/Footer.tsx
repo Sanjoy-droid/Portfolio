@@ -1,42 +1,160 @@
-import React from 'react';
-import Link from 'next/link';
+"use client"
+import React, { useEffect, useState } from 'react';
 import { Github, Twitter, Linkedin } from 'lucide-react';
+import { VscHome, VscCode, VscAccount, VscMail } from "react-icons/vsc";
+import Dock from "../app/uiComponents/Dock";
+import Link from 'next/link';
 
 const Footer = () => {
-  return (
-    <footer className="container px-4 py-8 md:mx-24   opacity-100">
+  // Add responsive state
+  const [dockSize, setDockSize] = useState({
+    panelHeight: 72,
+    baseItemSize: 48,
+    magnification: 64
+  });
 
-      <div className="flex justify-center space-x-12">
+  // Update dock size based on screen width
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width < 640) {
+        // Mobile
+        setDockSize({
+          panelHeight: 56,
+          baseItemSize: 36,
+          magnification: 52
+        });
+      } else if (width < 768) {
+        // Small tablets
+        setDockSize({
+          panelHeight: 64,
+          baseItemSize: 42,
+          magnification: 58
+        });
+      } else {
+        // Default for larger screens
+        setDockSize({
+          panelHeight: 72,
+          baseItemSize: 48,
+          magnification: 64
+        });
+      }
+    };
+
+    // Initial setup
+    handleResize();
+
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+
+    // Clean up
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Define dock items with social links and additional navigation
+  const dockItems = [
+    {
+      icon:
+        <Link href="/">
+          <VscHome size={24} />
+        </Link>,
+      label: 'Home',
+      onClick: () => { }
+
+    },
+    {
+      icon: (
+        <Link href="/work">
+          <VscCode size={24} />
+        </Link>
+      ),
+      label: "Work",
+      onClick: () => { },
+    },
+    {
+      icon: (
         <Link
           href="https://github.com/Sanjoy-droid"
           target="_blank"
-          className="transform text-gray-400 transition duration-300 hover:scale-110 hover:text-indigo-500"
+          rel="noopener noreferrer"
         >
-          <Github size={32} />
+          <Github size={24} />
         </Link>
+      ),
+      label: 'GitHub',
+      onClick: () => { }
+
+    },
+    {
+      icon: (
         <Link
           href="https://twitter.com/sanjoy_droid"
           target="_blank"
-          className="transform text-gray-400 transition duration-300 hover:scale-110 hover:text-indigo-500"
+          rel="noopener noreferrer"
         >
-          <Twitter size={32} />
+          <Twitter size={24} />
         </Link>
+      ),
+      label: 'Twitter',
+      onClick: () => { }
+    },
+    {
+      icon: (
         <Link
           href="https://linkedin.com/in/sanjoy-guin-bb3153343"
           target="_blank"
-          className="transform text-gray-400 transition duration-300 hover:scale-110 hover:text-indigo-500"
+          rel="noopener noreferrer"
         >
-          <Linkedin size={32} />
+          <Linkedin size={24} />
         </Link>
+      ),
+      label: 'LinkedIn',
+      onClick: () => { }
 
+    },
+    {
+      icon:
+        <Link href="/contact">
+          <VscMail size={24} />
+        </Link>,
+      label: 'Contact',
+      onClick: () => { }
+    },
+    {
+      icon:
+        <Link href="/about">
+          <VscAccount size={24} />
+        </Link>,
+      label: 'About',
+      onClick: () => { }
+    },
+  ];
+
+  return (
+    <div className="relative w-full">
+      <div className="h-32 sm:h-36 md:h-40 lg:h-48">
+        {/* Dock positioned at the bottom with responsive container */}
+        <div className="absolute bottom-12 left-0 right-0 w-full flex justify-center">
+          <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+            <Dock
+              items={dockItems}
+              panelHeight={dockSize.panelHeight}
+              baseItemSize={dockSize.baseItemSize}
+              magnification={dockSize.magnification}
+
+              className="bg-background/80 backdrop-blur-sm border-none shadow-none"
+            />
+          </div>
+        </div>
+
+        {/* Copyright text positioned below the dock */}
+        <div className="absolute bottom-2 sm:bottom-4 left-0 right-0 text-center">
+          <p className="text-xs sm:text-sm text-muted-foreground">
+            &copy; {new Date().getFullYear()} Sanjoy Guin. All rights reserved.
+          </p>
+        </div>
       </div>
-      <div className="mt-8 ">
-        <p className="text-center text-sm leading-5 text-muted-foreground">
-          &copy; {new Date().getFullYear()} Sanjoy Guin. All rights
-          reserved.
-        </p>
-      </div>
-    </footer>
+    </div>
   );
 };
 

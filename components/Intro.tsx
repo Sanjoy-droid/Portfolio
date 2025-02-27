@@ -1,12 +1,20 @@
+"use client"
 import React from "react";
 
 import Image from "next/image";
 import authorImage from "@/public/images/authors/dp.jpeg";
 import Link from "next/link";
+import BlurText from "@/app/uiComponents/BlurText";
+
+
+
 
 const page = () => {
+
+
   return (
-    <section className="container px-4 py-12 md:mx-24 md:py-24 ">
+    <section className="container px-4 py-12 md:mx-24 md:py-12 ">
+
       <div className="flex flex-col items-center  gap-8 md:flex-row md:gap-16 ">
         {/* Image Container with subtle animations and effects */}
         <div className="group relative">
@@ -31,11 +39,19 @@ const page = () => {
         {/* Text Content */}
         <div className="flex-1 space-y-6 text-center md:text-left">
           <div className="space-y-2">
-            <h2 className="text-sm font-medium uppercase tracking-wide text-blue-500">
+            <h2 className="text-sm font-medium uppercase tracking-wide text-blue-500 ml-4">
               Welcome to my portfolio
             </h2>
-            <h1 className="bg-gradient-to-r from-gray-100 to-gray-300 bg-clip-text text-4xl font-bold text-transparent md:text-5xl">
-              Hey, I&#39;m Sanjoy.
+            <h1 className="bg-gradient-to-r from-gray-100 to-gray-300 bg-clip-text text-4xl font-bold  md:text-5xl">
+              <BlurText
+                text="
+            Hey, I&#39;m Sanjoy.
+             "
+                className=""
+                delay={150}
+                animateBy="words"
+                direction="top"
+              />
             </h1>
           </div>
 
@@ -77,9 +93,14 @@ const page = () => {
 
       <div className="pt-4 flex justify-center md:justify-start md:pl-16 ">
         <Link href="/work">
+
           <button className="transform rounded-lg bg-gradient-to-r from-indigo-500 to-violet-500 px-6 py-3 text-white transition duration-300 hover:scale-105 hover:from-blue-500 hover:to-indigo-600">
             View My Work
           </button>
+
+
+
+
         </Link>
       </div>
     </section>

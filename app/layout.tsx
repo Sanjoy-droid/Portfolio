@@ -34,8 +34,9 @@ export default function RootLayout({
                         dark:scrollbar-thumb-gray-700 dark:scrollbar-track-gray-800"
         >
           {children}
+
+          <Footer />
         </main>
-        <Footer />
       </body>
     </html>
   );
