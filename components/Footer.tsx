@@ -60,11 +60,6 @@ const Footer = () => {
       onClick: () => { }
     },
     {
-      icon: <Link href="/work"><VscCode size={20} /></Link>,
-      label: "Work",
-      onClick: () => { }
-    },
-    {
       icon: (
         <Link
           href="https://github.com/Sanjoy-droid"
@@ -88,6 +83,19 @@ const Footer = () => {
         </Link>
       ),
       label: 'Twitter',
+      onClick: () => { }
+    },
+    {
+      icon: (
+        <Link
+          href="https://www.linkedin.com/in/sanjoy-guin-bb3153343/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Linkedin size={20} />
+        </Link>
+      ),
+      label: 'Linkedin',
       onClick: () => { }
     },
     {

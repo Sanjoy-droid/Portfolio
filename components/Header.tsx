@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed z-50 w-full transition-all duration-500 bg-gray-900/95  opacity-100 ${scrolled ? "py-2" : "py-4"
+      className={`fixed z-50 w-full transition-all duration-500text-white ${scrolled ? "py-2" : "py-4"
         }`}
     >
       {/* Gradient line at top */}
@@ -40,7 +40,7 @@ const Header = () => {
 
       {/* Backdrop */}
       <div
-        className={`absolute inset-0 bg-black/50 backdrop-blur-xl transition-opacity duration-500 ${scrolled ? "opacity-100" : "opacity-0"
+        className={`absolute inset-0 bg-black/50 backdrop-blur-xl transition-opacity duration-500 ${scrolled ? "opacity-100" : "opacity-80"
           }`}
       />
 
@@ -118,6 +118,5 @@ const Header = () => {
 };
 
 export default Header;
-
 
 
