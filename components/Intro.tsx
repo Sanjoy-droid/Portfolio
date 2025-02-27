@@ -38,12 +38,13 @@ const page = () => {
         </div>
 
         {/* Text Content */}
-        <div className="flex-1 space-y-6 text-center md:text-left">
+
+        <div className="flex-1 space-y-6 text-center md:text-left flex flex-col items-center md:items-start">
           <div className="space-y-2">
             <h2 className="text-sm font-medium uppercase tracking-wide text-blue-500 mx-7">
               Welcome to my portfolio
             </h2>
-            <h1 className="bg-gradient-to-r from-gray-100 to-gray-300 bg-clip-text text-4xl font-bold md:text-5xl flex justify-start items-center mx-6">
+            <h1 className="w-full mx-4 sm:mx-6 text-center bg-gradient-to-r from-gray-100 to-gray-300 bg-clip-text text-4xl font-bold md:text-5xl flex justify-center md:justify-start items-center">
               <BlurText
                 text="Hey, I&#39;m Sanjoy."
                 className=""
@@ -52,6 +53,7 @@ const page = () => {
                 direction="top"
               />
             </h1>
+
           </div>
           <p className="max-w-2xl text-lg leading-relaxed text-gray-400 md:text-xl mx-7">
             I&#39;m a FullStack Software Engineer passionate about building
