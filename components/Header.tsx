@@ -48,7 +48,7 @@ const Header = () => {
       <nav className="container relative mx-auto max-w-5xl px-4 ">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="relative text-xl font-bold">
+          <Link href="/" className="relative text-2xl font-bold">
             <span className="relative z-10 mx-24 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
               Portfolio
             </span>

@@ -57,8 +57,19 @@ const projects = [
 
 const ProjectSection = () => {
   return (
-    <section className="py-12 md:py-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="pt-20 md:py-20 bg-[#0a0b10] relative overflow-hidden">
+      <div className="absolute inset-0 opacity-40 bg-[linear-gradient(rgba(96,101,162,0.25)_1px,transparent_1px),linear-gradient(90deg,rgba(96,101,162,0.25)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
+
+      <div className="absolute inset-0 opacity-30 bg-[linear-gradient(rgba(122,128,191,0.15)_1px,transparent_1px),linear-gradient(90deg,rgba(122,128,191,0.15)_1px,transparent_1px)] bg-[size:10px_10px] pointer-events-none"></div>
+
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0a0b10] via-transparent to-[#0a0b10] opacity-60 pointer-events-none"></div>
+
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(111,103,238,0.08)_0%,transparent_50%),radial-gradient(circle_at_70%_60%,rgba(102,142,238,0.08)_0%,transparent_50%)] pointer-events-none"></div>
+
+      <div className="absolute -top-40 -left-40 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl animate-pulse [animation-duration:10s] pointer-events-none"></div>
+      <div className="absolute -bottom-60 -right-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl animate-pulse [animation-duration:15s] pointer-events-none"></div>
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="mb-10 md:mb-16 text-center md:text-left md:max-w-4xl md:mx-auto lg:mx-0 lg:ml-8">
           <h2 className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-3xl md:text-4xl font-bold text-transparent pt-6">
