@@ -5,13 +5,21 @@ import { ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 0,
-    title: "Brain Buddy",
+    title: "The Univillage",
     description:
-      "Advanced AI chatbot. Powered by cutting-edge technology for human-like interactions.",
-    tags: ["NextJS", "TypeScript", "Tailwind", "Gemini", "lucide-react"],
-    image: "/images/projects/project-0.png",
-    github: "https://github.com/Sanjoy-droid/Brain-Buddy-AI",
-    demo: "https://brain-buddy-eight.vercel.app/",
+      "FullStack Social Media App builth with Nextjs, Postgres, Prisma, Shadcn, Clerk.",
+    tags: [
+      "NextJS",
+      "TypeScript",
+      "Prisma",
+      "Postgres",
+      "Shadcn",
+      "Clerk",
+      "Tailwind",
+    ],
+    image: "/images/projects/project-6.png",
+    github: "https://github.com/Sanjoy-droid/TheUnivillage",
+    demo: "https://the-univillage.vercel.app/",
   },
   {
     id: 1,
@@ -34,6 +42,17 @@ const projects = [
   },
   {
     id: 3,
+    title: "Brain Buddy",
+    description:
+      "Advanced AI chatbot. Powered by cutting-edge technology for human-like interactions.",
+    tags: ["NextJS", "TypeScript", "Tailwind", "Gemini", "lucide-react"],
+    image: "/images/projects/project-3.png",
+    github: "https://github.com/Sanjoy-droid/Brain-Buddy-AI",
+    demo: "https://brain-buddy-eight.vercel.app/",
+  },
+
+  {
+    id: 4,
     title: "Reddit Clone",
     description:
       "A full-stack application resembling Reddit, facilitating user interaction through posting, voting to posts. Includes robust authentication, posting functionalities.",
@@ -42,16 +61,7 @@ const projects = [
     github: "https://github.com/Sanjoy-droid/Reddit-Clone-using-MERN-Stack",
     demo: "https://reddit-clone-using-mern-stack.vercel.app/",
   },
-  {
-    id: 4,
-    title: "Crowd Nest",
-    description:
-      "A crowdfunding initiative dedicated to tree plantation projects aims to combat climate change and promote environmental sustainability by supporting reforestation, urban greening, and community-driven afforestation efforts.",
-    tags: ["NextJS", "TypeScript", "Tailwind"],
-    image: "/images/projects/project-5.png",
-    github: "https://github.com/Sanjoy-droid/CrowdNest",
-    demo: "https://github.com/Sanjoy-droid/CrowdNest",
-  },
+
   // Add more projects as needed
 ];
 
@@ -148,7 +158,7 @@ const ProjectSection = () => {
                     </div>
                   </div>
                 </article>
-              )
+              ),
           )}
         </div>
       </div>
