@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Intro from "../components/Intro";
 import Waves from "@/app/uiComponents/Waves";
 
@@ -20,14 +20,9 @@ export default function Home() {
           yGap={36}
         />
       </div>
-
       <section className="relative pt-32">
-
-        <div className="container max-w-3xl">
-          <Intro />
-        </div>
+        <Intro />
       </section>
-
     </>
   );
 }
