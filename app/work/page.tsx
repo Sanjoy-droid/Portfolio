@@ -17,7 +17,7 @@ const projects = [
       "Clerk",
       "Tailwind",
     ],
-    image: "/images/projects/project-6.png",
+    image: "/images/projects/project-0.png",
     github: "https://github.com/Sanjoy-droid/TheUnivillage",
     demo: "https://the-univillage.vercel.app/",
   },
