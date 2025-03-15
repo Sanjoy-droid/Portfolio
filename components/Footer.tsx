@@ -104,7 +104,7 @@ const Footer = () => {
     },
     {
       icon: (
-        <Link href="/contact">
+        <Link href="mailto:guinsanjoy34@gmail.com">
           <VscMail size={20} />
         </Link>
       ),
@@ -133,7 +133,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright text positioned below the dock */}
-      <div className="left-0 right-0 text-center flex justify-center items-center pb-4 h-16 ">
+      <div className="left-0 right-0 text-center flex justify-center items-center pb-4 h-16 bg-gray-950 ">
         <p className="text-sm text-muted-foreground text-white">
           &copy; {new Date().getFullYear()} Sanjoy Guin. All rights reserved.
         </p>

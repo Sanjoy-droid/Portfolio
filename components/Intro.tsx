@@ -55,20 +55,23 @@ const page = () => {
               {/* Skills badges */}
               <div className="flex flex-wrap justify-center gap-2 md:justify-start">
                 {[
-                  "React",
-                  "Node.js",
-                  "TypeScript",
                   "Next.js",
+                  "React",
+                  "TypeScript",
+                  "Prsima",
+                  "Postgres",
+                  "Shadcn",
                   "Tailwind",
                   "MongoDB",
                   "ExpressJS",
+                  "Node.js",
                   "REST APIs",
                   "Git",
                   "Github",
+                  "Redis",
                   "Tmux",
                   "NeoVim",
                   "Linux",
-                  "Bootstrap",
                   "Postman",
                 ].map((skill) => (
                   <ShinyText
