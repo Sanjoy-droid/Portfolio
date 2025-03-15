@@ -38,11 +38,10 @@ const page = () => {
                 <h2 className="text-sm font-medium uppercase tracking-wide text-blue-500">
                   Welcome to my portfolio
                 </h2>
-                <h1 className="w-full text-center md:text-left bg-gradient-to-r from-gray-100 to-gray-300 bg-clip-text text-4xl font-bold md:text-5xl flex justify-center md:justify-start items-center">
+                <h1 className="w-full text-center md:text-left text-4xl font-bold md:text-5xl text-white">
                   <BlurText
                     text="Hey, I&#39;m Sanjoy."
-                    className=""
-                    delay={150}
+                    delay={50}
                     animateBy="words"
                     direction="top"
                   />
