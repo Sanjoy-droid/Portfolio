@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { ExternalLink, Github } from "lucide-react";
+import Footer from "@/components/Footer";
 
 const projects = [
   {
@@ -162,6 +163,7 @@ const ProjectSection = () => {
           )}
         </div>
       </div>
+      <Footer />
     </section>
   );
 };

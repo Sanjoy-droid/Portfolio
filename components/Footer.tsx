@@ -116,16 +116,16 @@ const Footer = () => {
   return (
     <>
       <div className="relative w-full overflow-hidden ">
-        <div className="h-28 sm:h-32 md:h-36 lg:h-44 bg-gray-950 backdrop-blur-md">
+        <div className="h-28 sm:h-32 md:h-36 lg:h-44  ">
           {/* Dock positioned at the bottom with responsive container */}
-          <div className="absolute bottom-2 left-0 right-0 w-full flex justify-center px-20 bg-transparent">
+          <div className="absolute bottom-2 left-0 right-0 w-full flex justify-center px-20 ">
             <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg text-white ">
               <Dock
                 items={dockItems}
                 panelHeight={dockSize.panelHeight}
                 baseItemSize={dockSize.baseItemSize}
                 magnification={dockSize.magnification}
-                className="bg-background/80 backdrop-blur-sm border-none shadow-none"
+                className=" border-none shadow-none"
               />
             </div>
           </div>
@@ -133,7 +133,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright text positioned below the dock */}
-      <div className="left-0 right-0 text-center flex justify-center items-center bg-gray-950 pb-4">
+      <div className="left-0 right-0 text-center flex justify-center items-center pb-4 h-16 ">
         <p className="text-sm text-muted-foreground text-white">
           &copy; {new Date().getFullYear()} Sanjoy Guin. All rights reserved.
         </p>

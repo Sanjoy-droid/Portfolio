@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Code2, Brain, Rocket, Mail, Github, Linkedin } from "lucide-react";
+import Footer from "@/components/Footer";
 
 const About = () => {
   const skills = [
@@ -99,44 +100,43 @@ const About = () => {
           </div>
           <div className="space-y-4 text-gray-300">
             <p>
-              Hello! I&apos;m Sanjoy Guin, an enthusiastic web developer
-              at the beginning of my journey in the world of software
-              development. My passion for coding started when I first
-              discovered how a few lines of code could create something
-              meaningful on the web.
+              Hello! I&apos;m Sanjoy Guin, an enthusiastic web developer at the
+              beginning of my journey in the world of software development. My
+              passion for coding started when I first discovered how a few lines
+              of code could create something meaningful on the web.
             </p>
             <p>
               While I&apos;m new to the professional development world,
-              I&apos;ve been dedicating my time to building a strong
-              foundation in modern web technologies. I&apos;m
-              particularly fascinated by frontend development, where I
-              can combine my creative instincts with technical skills to
-              create engaging user experiences.
+              I&apos;ve been dedicating my time to building a strong foundation
+              in modern web technologies. I&apos;m particularly fascinated by
+              frontend development, where I can combine my creative instincts
+              with technical skills to create engaging user experiences.
             </p>
             <p>
-              Currently, I&apos;m focused on mastering React and
-              Next.js, while also exploring the broader JavaScript
-              ecosystem. I spend my time building personal projects,
-              contributing to open-source when I can, and continuously
-              learning through online resources and coding challenges.
+              Currently, I&apos;m focused on mastering React and Next.js, while
+              also exploring the broader JavaScript ecosystem. I spend my time
+              building personal projects, contributing to open-source when I
+              can, and continuously learning through online resources and coding
+              challenges.
             </p>
             <p>
               What excites me most about web development is the endless
-              opportunity to learn and grow. Every project is a new
-              chance to solve problems creatively and improve my skills.
-              I&apos;m eager to collaborate with others and contribute
-              to meaningful projects that make a difference.
+              opportunity to learn and grow. Every project is a new chance to
+              solve problems creatively and improve my skills. I&apos;m eager to
+              collaborate with others and contribute to meaningful projects that
+              make a difference.
             </p>
             <p>
-              When I&apos;m not coding, you can find me exploring new
-              web technologies, reading tech blogs, or participating in
-              coding communities. I believe in the power of community
-              learning and am always open to connecting with fellow
-              developers and learning from their experiences.
+              When I&apos;m not coding, you can find me exploring new web
+              technologies, reading tech blogs, or participating in coding
+              communities. I believe in the power of community learning and am
+              always open to connecting with fellow developers and learning from
+              their experiences.
             </p>
           </div>
         </div>
       </div>
+      <Footer />
     </section>
   );
 };

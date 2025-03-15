@@ -1,10 +1,11 @@
 "use client";
+import Footer from "@/components/Footer";
 import Intro from "../components/Intro";
 import Waves from "@/app/uiComponents/Waves";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <Waves
           lineColor="#390099"
@@ -20,9 +21,11 @@ export default function Home() {
           yGap={36}
         />
       </div>
-      <section className="relative pt-32">
+      <section className="relative py-32">
         <Intro />
       </section>
-    </>
+
+      <Footer />
+    </div>
   );
 }
