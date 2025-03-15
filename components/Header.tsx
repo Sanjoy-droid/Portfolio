@@ -32,16 +32,18 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed z-50 w-full transition-all duration-500text-white ${scrolled ? "py-2" : "py-4"
-        }`}
+      className={`fixed z-50 w-full transition-all duration-500text-white ${
+        scrolled ? "py-2" : "py-4"
+      }`}
     >
       {/* Gradient line at top */}
       <div className="absolute left-0 top-0 h-[1px] w-full bg-gradient-to-r from-purple-500/0 via-purple-500/50 to-purple-500/0" />
 
       {/* Backdrop */}
       <div
-        className={`absolute inset-0 bg-black/50 backdrop-blur-xl transition-opacity duration-500 ${scrolled ? "opacity-100" : "opacity-80"
-          }`}
+        className={`absolute inset-0 bg-black/50 backdrop-blur-xl transition-opacity duration-500 ${
+          scrolled ? "opacity-100" : "opacity-80"
+        }`}
       />
 
       {/* Main navigation */}
@@ -78,7 +80,10 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button onClick={() => setIsOpen(!isOpen)} className="p-2 md:hidden">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="p-2 md:hidden text-white "
+          >
             <Menu className="h-6 w-6" />
           </button>
         </div>
@@ -86,8 +91,9 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 bg-black/95 backdrop-blur-xl transition-transform duration-500  ${isOpen ? "translate-y-0" : "-translate-y-full"
-          }`}
+        className={`fixed inset-0 bg-black/95 backdrop-blur-xl transition-transform duration-500  ${
+          isOpen ? "translate-y-0" : "-translate-y-full"
+        }`}
       >
         <div className="container mx-auto px-4 py-20">
           <div className="flex flex-col gap-8">
@@ -118,5 +124,3 @@ const Header = () => {
 };
 
 export default Header;
-
-

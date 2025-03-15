@@ -27,11 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body className="h-full overflow-hidden antialiased">
-
         <Header />
         <main
-          className="grow h-screen overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 
-                        scrollbar-track-gray-100 hover:scrollbar-thumb-gray-400 
+          className="grow h-screen overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300
+                        scrollbar-track-gray-100 hover:scrollbar-thumb-gray-400
                         dark:scrollbar-thumb-gray-700 dark:scrollbar-track-gray-800"
         >
           {children}
