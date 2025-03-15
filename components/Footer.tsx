@@ -132,8 +132,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Copyright text positioned below the dock */}
-      <div className="left-0 right-0 text-center flex justify-center items-center pb-4 h-16 bg-gray-950 ">
+      <div className="left-0 right-0 text-center flex justify-center items-center pb-4 h-16 bg-gray-950 sm:bg-transparent">
         <p className="text-sm text-muted-foreground text-white">
           &copy; {new Date().getFullYear()} Sanjoy Guin. All rights reserved.
         </p>
