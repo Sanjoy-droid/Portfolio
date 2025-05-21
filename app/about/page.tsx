@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { Code2, Brain, Rocket, Mail, Github, Linkedin } from "lucide-react";
 import Footer from "@/components/Footer";
