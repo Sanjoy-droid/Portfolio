@@ -48,11 +48,14 @@ const About = () => {
       {/* Content Container */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Hero Section */}
-        <div className="mb-16 text-center">
-          <h1 className="mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-4xl font-bold text-transparent md:text-6xl">
+        {/* Hero Section */}
+        <div className="mb-16 text-center md:text-left max-w-4xl mx-auto mt-12">
+          <h1 className="mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-4xl font-bold text-transparent">
             About Me
           </h1>
-          <p className="mx-auto max-w-2xl text-gray-400">
+          <div className="h-1 w-24 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full mx-auto md:mx-0 mt-3"></div>
+
+          <p className="mt-4 text-gray-400">
             Passionate web developer with a focus on creating beautiful,
             functional, and user-friendly applications. I love turning complex
             problems into simple, elegant solutions.
