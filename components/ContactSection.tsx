@@ -14,10 +14,10 @@ const ContactSection = () => {
       <div className="container relative mx-auto max-w-4xl">
         {/* Header */}
         <div className="mb-12 md:mb-16 text-center md:text-left max-w-4xl mx-auto space-y-4">
-          <h1 className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-4xl sm:text-3xl md:text-4xl font-bold text-transparent">
+          <h1 className="bg-gradient-to-r from-indigo-500 to-purple-500  bg-clip-text text-4xl sm:text-3xl md:text-4xl font-bold text-transparent">
             Get In Touch
           </h1>
-          <div className="h-1 w-24 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full mx-auto md:mx-0 mt-2"></div>
+          <div className="h-1 w-24 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full mx-auto md:mx-0 mt-3"></div>
           <p className="text-sm sm:text-base text-gray-400 px-4 md:px-0">
             I&apos;m always open to discussing new projects and opportunities.
             Have a project in mind or just want to chat? Feel free to reach out.

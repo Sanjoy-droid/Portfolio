@@ -98,7 +98,7 @@ const WorkPage = () => {
         {/* Experience Section */}
         <section className="mb-12">
           <div className="my-6 text-center md:text-left max-w-4xl mx-auto">
-            <h2 className="bg-gradient-to-r from-purple-400 via-pink-500 to-indigo-400  bg-clip-text text-3xl md:text-4xl font-bold text-transparent">
+            <h2 className="bg-gradient-to-r from-indigo-500 to-purple-500   bg-clip-text text-3xl md:text-4xl font-bold text-transparent">
               Professional Experience
             </h2>
             <div className="h-1 w-24 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full mx-auto md:mx-0 mt-3"></div>
@@ -171,10 +171,11 @@ const WorkPage = () => {
         {/* Projects Section */}
         <section className="mb-12">
           <div className="mb-12 text-center md:text-left max-w-4xl mx-auto">
-            <h2 className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-3xl md:text-4xl font-bold text-transparent">
+            <h2 className="bg-gradient-to-r from-indigo-500 to-purple-500   bg-clip-text text-3xl md:text-4xl font-bold text-transparent">
               Featured Projects
             </h2>
-            <div className="h-1 w-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mx-auto md:mx-0 mt-3"></div>
+
+            <div className="h-1 w-24 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full mx-auto md:mx-0 mt-3"></div>
             <p className="mt-4 text-gray-400 max-w-2xl mx-auto md:mx-0">
               A showcase of my technical expertise and passion for building
               exceptional digital experiences.

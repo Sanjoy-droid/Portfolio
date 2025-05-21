@@ -51,7 +51,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="relative text-2xl font-bold">
-            <span className="relative z-10 mx-24 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <span
+              className="relative z-10 mx-24 
+bg-gradient-to-r from-indigo-500 to-purple-500
+              bg-clip-text text-transparent"
+            >
               Portfolio
             </span>
             <div className="absolute inset-1 rounded-lg bg-gradient-to-r from-purple-500/20 to-indigo-500/20 opacity-0 blur transition-opacity duration-500 group-hover:opacity-100" />
@@ -65,14 +69,20 @@ const Header = () => {
                 <Link
                   key={id}
                   href={href}
-                  className={`group relative px-3 py-2 transition-colors duration-300 ${isActive ? "text-white" : "text-gray-300 hover:text-white"}`}
+                  className={`group relative px-3 py-2 transition-colors duration-300 ${
+                    isActive ? "text-white" : "text-gray-300 hover:text-white"
+                  }`}
                 >
                   <div className="flex items-center gap-2">
                     <Icon className="h-4 w-4" />
                     <span>{label}</span>
                   </div>
                   <div
-                    className={`absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-purple-400 to-indigo-700 transition-transform duration-300 ${isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`}
+                    className={`absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-purple-400 to-indigo-700 transition-transform duration-300 ${
+                      isActive
+                        ? "scale-x-100"
+                        : "scale-x-0 group-hover:scale-x-100"
+                    }`}
                   />
                 </Link>
               );
@@ -107,7 +117,9 @@ const Header = () => {
                   key={id}
                   href={href}
                   onClick={() => setIsOpen(false)}
-                  className={`flex items-center gap-4 text-2xl transition-colors duration-300 ${isActive ? "text-white" : "text-gray-300 hover:text-white"}`}
+                  className={`flex items-center gap-4 text-2xl transition-colors duration-300 ${
+                    isActive ? "text-white" : "text-gray-300 hover:text-white"
+                  }`}
                 >
                   <Icon
                     className={`h-6 w-6 ${isActive ? "text-purple-400" : ""}`}
