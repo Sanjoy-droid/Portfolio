@@ -6,32 +6,28 @@ const About = () => {
   const skills = [
     {
       category: "Frontend Development",
-      items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux"],
+      items: [
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "Shadcn UI",
+        "Context API",
+      ],
     },
     {
       category: "Backend Development",
-      items: ["Node.js", "Express", "MongoDB", "RESTful APIs"],
+      items: ["Node.js", "Express", "PostgreSQL", "Prisma ORM", "REST APIs"],
     },
     {
       category: "Tools & Others",
-      items: ["Git", "Github"],
-    },
-  ];
-
-  const experiences = [
-    {
-      period: "2022 - Present",
-      role: "Senior Frontend Developer",
-      company: "Tech Solutions Inc.",
-      description:
-        "Leading frontend development team, implementing modern web solutions using React and Next.js",
-    },
-    {
-      period: "2020 - 2022",
-      role: "Full Stack Developer",
-      company: "Digital Innovations Ltd",
-      description:
-        "Developed and maintained full-stack applications using MERN stack",
+      items: [
+        "Git",
+        "GitHub",
+        "Clerk Auth",
+        "UploadThing",
+        "Google Gemini API",
+      ],
     },
   ];
 
@@ -50,7 +46,7 @@ const About = () => {
         {/* Hero Section */}
         {/* Hero Section */}
         <div className="mb-16 text-center md:text-left max-w-4xl mx-auto mt-12">
-          <h1 className="mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-4xl font-bold text-transparent">
+          <h1 className="mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-4xl md:text-4xl font-bold text-transparent">
             About Me
           </h1>
           <div className="h-1 w-24 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full mx-auto md:mx-0 mt-3"></div>
@@ -100,41 +96,64 @@ const About = () => {
             <Rocket className="h-6 w-6 text-purple-400" />
             <h2 className="text-2xl font-bold text-white">About</h2>
           </div>
-          <div className="space-y-4 text-gray-300">
-            <p>
-              Hello! I&apos;m Sanjoy Guin, an enthusiastic web developer at the
-              beginning of my journey in the world of software development. My
-              passion for coding started when I first discovered how a few lines
-              of code could create something meaningful on the web.
-            </p>
-            <p>
-              While I&apos;m new to the professional development world,
-              I&apos;ve been dedicating my time to building a strong foundation
-              in modern web technologies. I&apos;m particularly fascinated by
-              frontend development, where I can combine my creative instincts
-              with technical skills to create engaging user experiences.
-            </p>
-            <p>
-              Currently, I&apos;m focused on mastering React and Next.js, while
-              also exploring the broader JavaScript ecosystem. I spend my time
-              building personal projects, contributing to open-source when I
-              can, and continuously learning through online resources and coding
-              challenges.
-            </p>
-            <p>
-              What excites me most about web development is the endless
-              opportunity to learn and grow. Every project is a new chance to
-              solve problems creatively and improve my skills. I&apos;m eager to
-              collaborate with others and contribute to meaningful projects that
-              make a difference.
-            </p>
-            <p>
-              When I&apos;m not coding, you can find me exploring new web
-              technologies, reading tech blogs, or participating in coding
-              communities. I believe in the power of community learning and am
-              always open to connecting with fellow developers and learning from
-              their experiences.
-            </p>
+          <div className="rounded-xl border border-purple-500/20 bg-purple-500/5 p-8">
+            <div className="space-y-5 text-gray-300">
+              <p className="leading-relaxed">
+                Hello! I&apos;m{" "}
+                <span className="text-purple-400 font-medium">Sanjoy Guin</span>
+                , a frontend developer specializing in building modern,
+                high-performance web applications with{" "}
+                <span className="text-blue-400">Next.js </span>
+                and <span className="text-blue-400">React</span>. With
+                professional experience at Lernn, I've developed a keen eye for
+                creating responsive UI components that deliver exceptional user
+                experiences.
+              </p>
+              <p className="leading-relaxed">
+                As a developer who values both technical excellence and visual
+                aesthetics, I focus on creating solutions that not only function
+                flawlessly but also engage users through thoughtful design
+                principles. My expertise in{" "}
+                <span className="text-blue-400">Tailwind CSS</span> allows me to
+                rapidly prototype and deliver polished interfaces that maintain
+                consistency across platforms.
+              </p>
+              <p className="leading-relaxed">
+                My approach to development emphasizes{" "}
+                <span className="text-purple-400 font-medium">
+                  performance optimization
+                </span>{" "}
+                and code quality. I've successfully refactored legacy codebases
+                to improve load times by{" "}
+                <span className="text-green-400 font-medium">30%</span>,
+                demonstrating my commitment to creating efficient, scalable
+                applications. Through implementing reusable component systems, I
+                ensure maintainable codebases that can evolve with product
+                requirements.
+              </p>
+              <p className="leading-relaxed">
+                I'm particularly passionate about fullstack development, having
+                built complex applications like{" "}
+                <span className="text-blue-400">The Univillage</span> social
+                media platform and{" "}
+                <span className="text-blue-400">Brain Buddy AI</span> chatbot.
+                These projects showcase my ability to integrate frontend
+                interfaces with sophisticated backend functionality, from
+                real-time updates to AI-powered features.
+              </p>
+              <p className="leading-relaxed">
+                I believe in{" "}
+                <span className="text-purple-400 font-medium">
+                  continuous learning
+                </span>{" "}
+                and staying at the forefront of web technologies. I'm constantly
+                expanding my skill set through practical implementation and
+                challenging myself with projects that push the boundaries of
+                what's possible on the web. I'm excited to collaborate on
+                innovative projects that solve real-world problems through
+                thoughtful, user-centered design and robust engineering.
+              </p>
+            </div>
           </div>
         </div>
       </div>
