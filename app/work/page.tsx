@@ -181,6 +181,15 @@ const WorkPage = () => {
                 key={project.id}
                 className="group relative overflow-hidden rounded-xl border border-gray-800/50 bg-gray-900/50 backdrop-blur-sm transition-all duration-300 hover:border-indigo-500/50 hover:bg-gray-900/80 hover:shadow-lg hover:shadow-indigo-500/10 h-full flex flex-col"
               >
+                {/* Invisible overlay link */}
+                <Link
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute inset-0 z-10"
+                  aria-label={`Visit ${project.title} demo`}
+                />
+
                 {/* Project Image with Overlay */}
                 <div className="relative h-52 md:h-56 w-full overflow-hidden">
                   <Image
@@ -193,7 +202,7 @@ const WorkPage = () => {
                 </div>
 
                 {/* Content */}
-                <div className="flex-grow flex flex-col p-5 md:p-6">
+                <div className="flex-grow flex flex-col p-5 md:p-6 relative z-20">
                   <h3 className="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors duration-300">
                     {project.title}
                   </h3>
@@ -225,7 +234,7 @@ const WorkPage = () => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center text-gray-400 hover:text-white transition-colors duration-300"
+                      className="flex items-center text-gray-400 hover:text-white transition-colors duration-300 relative z-30"
                       aria-label={`View ${project.title} on GitHub`}
                     >
                       <Github className="h-4 w-4 mr-1.5" />
@@ -236,14 +245,15 @@ const WorkPage = () => {
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center text-gray-400 hover:text-white transition-colors duration-300"
+                      className="flex items-center text-gray-400 hover:text-white transition-colors duration-300 relative z-30"
                       aria-label={`Visit ${project.title} demo`}
                     >
                       <ExternalLink className="h-4 w-4 mr-1.5" />
                       <span className="text-sm">Live Demo</span>
                     </Link>
+
                     {/* Date Badge */}
-                    <div className=" bg-gray-900/80 backdrop-blur-sm text-xs font-medium text-indigo-400 py-1 px-2 rounded-full border border-indigo-500/30 flex items-center">
+                    <div className="bg-gray-900/80 backdrop-blur-sm text-xs font-medium text-indigo-400 py-1 px-2 rounded-full border border-indigo-500/30 flex items-center">
                       <Calendar className="h-3 w-3 mr-1" />
                       {project.date}
                     </div>
