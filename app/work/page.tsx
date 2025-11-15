@@ -2,8 +2,55 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ExternalLink, Github, Calendar, Briefcase } from "lucide-react";
+import {
+  ExternalLink,
+  Github,
+  Calendar,
+  Briefcase,
+  MapPin,
+} from "lucide-react";
 import Footer from "@/components/Footer";
+
+const experiences = [
+  {
+    id: 0,
+    title: "Front-End Developer",
+    company: "Lernn",
+    location: "Remote",
+    period: "June 2025",
+    companyUrl: "https://www.lernn.ai/",
+    image: "/images/projects/ln-ai.png", // Add your Lernn company image
+    description:
+      "Building responsive, high-performance web applications for an innovative learning platform.",
+    responsibilities: [
+      "Developed and maintained responsive, high-performance UI components using Next.js, Tailwind CSS.",
+      "Collaborated with backend developers to integrate REST APIs into the frontend.",
+      "Refactored legacy code to improve performance and readability, reducing load time by 30%.",
+      "Implemented reusable components and design systems to maintain UI consistency across the platform.",
+    ],
+    tags: ["Next.js", "JavaScript", "Tailwind CSS", "REST API", "UI/UX"],
+    type: "Full-time",
+  },
+  {
+    id: 1,
+    title: "Freelance Web Developer",
+    company: "Portfolio Website",
+    location: "Remote",
+    period: "Sept 2025",
+    companyUrl: "https://github.com/aleriado", // Add client project URL if available
+    image: "/images/projects/al.png", // Add your project image
+    description:
+      "Delivered a custom portfolio website with modern design and seamless user experience.",
+    responsibilities: [
+      "Built a responsive portfolio website with Next.js showcasing client's work and achievements.",
+      "Designed and implemented custom UI components matching client's brand identity.",
+      "Optimized website performance achieving 95+ Lighthouse scores across all metrics.",
+      "Deployed and maintained the application with continuous integration and monitoring.",
+    ],
+    tags: ["Next.js", "React", "Stripe", "MongoDB", "Vercel"],
+    type: "Freelance",
+  },
+];
 
 const projects = [
   {
@@ -27,6 +74,24 @@ const projects = [
   },
   {
     id: 1,
+    title: "SocioCart",
+    description:
+      "SocioCart is a clean, modern e-commerce frontend built in Next.js using Tailwind and shadcn/ui. It uses the FakeStore API (no real backend, DB, or auth) and showcases advanced filtering, sorting, responsive UI, and a local-only cart — perfect as a portfolio-ready demo store.",
+    tags: [
+      "Next.js",
+      "JavaScript",
+      "Shadcn UI",
+      "Tailwind CSS",
+      "FakeStore API",
+      "Lucide-React",
+    ],
+    image: "/images/projects/scart.png",
+    github: "https://github.com/Sanjoy-droid/SocioCart",
+    demo: "https://sociocart.vercel.app/",
+    date: "May 25",
+  },
+  {
+    id: 2,
     title: "Brain Buddy AI",
     description:
       "Advanced AI chatbot built with Next.js and Tailwind CSS. Uses Google Gemini API for natural language understanding with seamless frontend and backend integration through Lucide-React.",
@@ -40,10 +105,10 @@ const projects = [
     image: "/images/projects/project-3.png",
     github: "https://github.com/Sanjoy-droid/Brain-Buddy-AI",
     demo: "https://brain-buddy-eight.vercel.app/",
-    date: "Mar 25",
+    date: "June 25",
   },
   {
-    id: 2,
+    id: 3,
     title: "Zomato Clone",
     description:
       "A MERN stack application modeled after Zomato. Built with React and Context API for state management. Supports interactive UI components and REST-based backend integration.",
@@ -52,23 +117,6 @@ const projects = [
     github: "https://github.com/Sanjoy-droid/Zomato-Clone-using-MERN-Stack",
     demo: "https://zomato-clone-using-mern-stack.vercel.app/",
     date: "Feb 25",
-  },
-  {
-    id: 3,
-    title: "Web Wisdom AI",
-    description: "AI-Powered Contextual Chat for Websites.",
-    tags: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "RAG-Chat",
-      "Upstash",
-      "Redis",
-    ],
-    image: "/images/projects/project-1.png",
-    github: "https://github.com/Sanjoy-droid/Web-Wisdom",
-    demo: "https://web-wisdom-taupe.vercel.app/",
-    date: "Jan 25",
   },
   {
     id: 4,
@@ -96,83 +144,105 @@ const WorkPage = () => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12 relative z-10">
         {/* Experience Section */}
-        <section className="mb-12">
-          <div className="my-6 text-center  max-w-4xl mx-auto">
-            <h2 className="bg-gradient-to-r from-indigo-500 to-purple-500   bg-clip-text text-3xl md:text-4xl font-bold text-transparent">
+        <section className="mb-16">
+          <div className="mb-12 text-center max-w-4xl mx-auto">
+            <h2 className="bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-3xl md:text-4xl font-bold text-transparent">
               Professional Experience
             </h2>
+            <p className="text-gray-400 mt-4">
+              Building impactful digital solutions across various domains
+            </p>
           </div>
 
-          <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800/50 rounded-xl p-6 md:p-8 hover:border-indigo-500/50 transition-all duration-300">
-            <div className="flex flex-col mb-4">
-              {/* First row: title + link + date */}
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full">
-                {/* Left side: title + link */}
-                <div className="flex items-center space-x-2">
-                  <h3 className="text-2xl font-bold text-white">
-                    Front-End Developer
-                  </h3>
-                  <Link
-                    href="https://wellfound.com/company/lernn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-white transition-colors duration-300"
-                    aria-label="Visit https://wellfound.com/company/lernn demo"
-                  >
-                    <ExternalLink className="h-5 w-5" />
-                  </Link>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {experiences.map((exp) => (
+              <article
+                key={exp.id}
+                className="group relative overflow-hidden rounded-xl border border-gray-800/50 bg-gray-900/50 backdrop-blur-sm transition-all duration-300 hover:border-indigo-500/50 hover:bg-gray-900/80 hover:shadow-lg hover:shadow-indigo-500/10"
+              >
+                {/* Company Image Header */}
+                <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-indigo-900/20 to-purple-900/20">
+                  <Image
+                    src={exp.image}
+                    alt={exp.company}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent" />
+
+                  {/* Type Badge */}
+                  <div className="absolute top-4 right-4 bg-indigo-500/20 backdrop-blur-sm border border-indigo-500/50 px-3 py-1 rounded-full">
+                    <span className="text-xs font-semibold text-indigo-300">
+                      {exp.type}
+                    </span>
+                  </div>
                 </div>
 
-                {/* Right side: date */}
-                <div className="flex items-center mt-2 md:mt-0">
-                  <Calendar className="h-5 w-5 text-gray-400 mr-2" />
-                  <span className="text-gray-400">April 2025 - Present</span>
+                {/* Content */}
+                <div className="p-6">
+                  {/* Header */}
+                  <div className="mb-4">
+                    <div className="flex items-start justify-between mb-2">
+                      <div className="flex-1">
+                        <h3 className="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors duration-300 mb-1">
+                          {exp.title}
+                        </h3>
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <Link
+                            href={exp.companyUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-indigo-400 font-medium hover:text-indigo-300 transition-colors duration-300 flex items-center gap-1"
+                          >
+                            {exp.company}
+                            <ExternalLink className="h-3 w-3" />
+                          </Link>
+                          <span className="text-gray-500">•</span>
+                          <span className="text-gray-400 text-sm flex items-center gap-1">
+                            <MapPin className="h-3 w-3" />
+                            {exp.location}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center text-gray-400 text-sm">
+                      <Calendar className="h-4 w-4 mr-2" />
+                      {exp.period}
+                    </div>
+                  </div>
+
+                  {/* Description */}
+                  <p className="text-gray-300 text-sm mb-4 leading-relaxed">
+                    {exp.description}
+                  </p>
+
+                  {/* Tech Stack Tags */}
+                  <div className="flex flex-wrap gap-2 pt-4 border-t border-gray-800/50">
+                    {exp.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="rounded-full bg-gray-800/70 backdrop-blur-sm border border-gray-700/50 px-3 py-1 text-xs font-medium text-gray-300"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-
-              {/* Second row: company info */}
-              <p className="text-indigo-400 font-medium mt-1">Lernn — Remote</p>
-            </div>
-
-            <ul className="space-y-3 mt-6">
-              <li className="flex">
-                <span className="text-indigo-400 mr-2">•</span>
-                <p className="text-gray-300">
-                  Developed and maintained responsive, high-performance UI
-                  components using Next.js, Tailwind CSS.
-                </p>
-              </li>
-              <li className="flex">
-                <span className="text-indigo-400 mr-2">•</span>
-                <p className="text-gray-300">
-                  Collaborated with backend developers to integrate REST APIs
-                  into the frontend.
-                </p>
-              </li>
-              <li className="flex">
-                <span className="text-indigo-400 mr-2">•</span>
-                <p className="text-gray-300">
-                  Refactored legacy code to improve performance and readability,
-                  reducing load time by 30%.
-                </p>
-              </li>
-              <li className="flex">
-                <span className="text-indigo-400 mr-2">•</span>
-                <p className="text-gray-300">
-                  Implemented reusable components and design systems to maintain
-                  UI consistency across the platform.
-                </p>
-              </li>
-            </ul>
+              </article>
+            ))}
           </div>
         </section>
 
         {/* Projects Section */}
         <section className="mb-12">
-          <div className="mb-12 text-center  max-w-4xl mx-auto">
-            <h2 className="bg-gradient-to-r from-indigo-500 to-purple-500   bg-clip-text text-3xl md:text-4xl font-bold text-transparent">
+          <div className="mb-12 text-center max-w-4xl mx-auto">
+            <h2 className="bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-3xl md:text-4xl font-bold text-transparent">
               Featured Projects
             </h2>
+            <p className="text-gray-400 mt-4">
+              Personal projects showcasing full-stack development expertise
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -181,7 +251,6 @@ const WorkPage = () => {
                 key={project.id}
                 className="group relative overflow-hidden rounded-xl border border-gray-800/50 bg-gray-900/50 backdrop-blur-sm transition-all duration-300 hover:border-indigo-500/50 hover:bg-gray-900/80 hover:shadow-lg hover:shadow-indigo-500/10 h-full flex flex-col"
               >
-                {/* Invisible overlay link */}
                 <Link
                   href={project.demo}
                   target="_blank"
@@ -190,7 +259,6 @@ const WorkPage = () => {
                   aria-label={`Visit ${project.title} demo`}
                 />
 
-                {/* Project Image with Overlay */}
                 <div className="relative h-52 md:h-56 w-full overflow-hidden">
                   <Image
                     src={project.image}
@@ -201,7 +269,6 @@ const WorkPage = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-90" />
                 </div>
 
-                {/* Content */}
                 <div className="flex-grow flex flex-col p-5 md:p-6 relative z-20">
                   <h3 className="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors duration-300">
                     {project.title}
@@ -211,7 +278,6 @@ const WorkPage = () => {
                     {project.description}
                   </p>
 
-                  {/* Tags */}
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.slice(0, 3).map((tag) => (
                       <span
@@ -228,7 +294,6 @@ const WorkPage = () => {
                     )}
                   </div>
 
-                  {/* Links */}
                   <div className="flex items-center gap-4 mt-auto pt-3 border-t border-gray-800/50">
                     <Link
                       href={project.github}
@@ -252,8 +317,7 @@ const WorkPage = () => {
                       <span className="text-sm">Live Demo</span>
                     </Link>
 
-                    {/* Date Badge */}
-                    <div className="bg-gray-900/80 backdrop-blur-sm text-xs font-medium text-indigo-400 py-1 px-2 rounded-full border border-indigo-500/30 flex items-center">
+                    <div className="bg-gray-900/80 text-xs font-medium text-slate-400 py-1 px-2 rounded-full border border-indigo-500/30 flex items-center ml-auto">
                       <Calendar className="h-3 w-3 mr-1" />
                       {project.date}
                     </div>

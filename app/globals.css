@@ -5,6 +5,7 @@
 .scrollbar-thin {
   scrollbar-width: thin; /* For Firefox */
 }
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -21,4 +22,10 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px; /* Increased from default 14px */
+}
+
+/* Optional: Increase base font size for better readability */
+html {
+  font-size: 112.5%; /* This makes 1rem = 18px instead of 16px */
 }

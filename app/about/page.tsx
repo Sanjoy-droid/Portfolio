@@ -99,8 +99,8 @@ const About = () => {
             <div className="space-y-5 text-gray-300">
               <p className="leading-relaxed">
                 Hello! I&apos;m{" "}
-                <span className="text-purple-400 font-medium">Sanjoy Guin</span>
-                , a frontend developer specializing in building modern,
+                <span className="text-purple-400 font-medium">Sanjoy </span>, a
+                frontend developer specializing in building modern,
                 high-performance web applications with{" "}
                 <span className="text-blue-400">Next.js </span>
                 and <span className="text-blue-400">React</span>. With
