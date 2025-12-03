@@ -72,7 +72,7 @@ const projects = [
     demo: "https://the-univillage.vercel.app/",
     date: "Mar 25",
   },
-  {
+  /* {
     id: 1,
     title: "SocioCart",
     description:
@@ -89,9 +89,9 @@ const projects = [
     github: "https://github.com/Sanjoy-droid/SocioCart",
     demo: "https://sociocart.vercel.app/",
     date: "May 25",
-  },
+  }, */
   {
-    id: 2,
+    id: 1,
     title: "Brain Buddy AI",
     description:
       "Advanced AI chatbot built with Next.js and Tailwind CSS. Uses Google Gemini API for natural language understanding with seamless frontend and backend integration through Lucide-React.",
@@ -108,7 +108,7 @@ const projects = [
     date: "June 25",
   },
   {
-    id: 3,
+    id: 2,
     title: "Zomato Clone",
     description:
       "A MERN stack application modeled after Zomato. Built with React and Context API for state management. Supports interactive UI components and REST-based backend integration.",
@@ -119,7 +119,30 @@ const projects = [
     date: "Feb 25",
   },
   {
+    id: 3,
+    title: "CleanPro",
+    description:
+      "A lightweight, conversion-focused Laundry Service landing page built on Next.js 15 and React 19, styled with TailwindCSS 4. The project leans on Turbopack for rapid iteration and minimal build times.",
+    tags: ["Next.js", "JavaScript", "Tailwind CSS", "Lucide-React"],
+    image: "/images/projects/cleanpro.png",
+    github: "https://github.com/Sanjoy-droid/CleanPro",
+    demo: "https://cleanpro-gamma.vercel.app/",
+    date: "Jan 25",
+  },
+  {
     id: 4,
+    title: "TreePro",
+    description:
+      "A clean, high-converting Tree Removal business landing page built with Next.js 15, React 19, and TailwindCSS 4. Designed for speed, SEO, and responsiveness using Turbopack for blazing-fast dev builds.",
+    tags: ["Next.js", "JavaScript", "Tailwind CSS", "lucide-react"],
+    image: "/images/projects/tree.png",
+    github: "https://github.com/Sanjoy-droid/TreePro",
+    demo: "https://tree-removal-rust.vercel.app/",
+    date: "Feb 25",
+  },
+
+  {
+    id: 5,
     title: "Reddit Clone",
     description:
       "A full-stack application resembling Reddit, facilitating user interaction through posting and voting. Includes robust authentication and content posting functionalities.",
