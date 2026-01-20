@@ -14,41 +14,44 @@ import Footer from "@/components/Footer";
 const experiences = [
   {
     id: 0,
-    title: "Front-End Developer",
-    company: "Lernn",
+    title: "Fullstack Developer",
+    company: "Bloomr World",
     location: "Remote",
-    period: "June 2025",
-    companyUrl: "https://www.lernn.ai/",
-    image: "/images/projects/ln-ai.png", // Add your Lernn company image
+    period: "Dec 2025 – Present",
+    companyUrl: "https://www.bloomr.world/",
+    image: "/images/projects/bloomr-world(1).png",
     description:
-      "Building responsive, high-performance web applications for an innovative learning platform.",
-    responsibilities: [
-      "Developed and maintained responsive, high-performance UI components using Next.js, Tailwind CSS.",
-      "Collaborated with backend developers to integrate REST APIs into the frontend.",
-      "Refactored legacy code to improve performance and readability, reducing load time by 30%.",
-      "Implemented reusable components and design systems to maintain UI consistency across the platform.",
-    ],
-    tags: ["Next.js", "JavaScript", "Tailwind CSS", "REST API", "UI/UX"],
+      "Built core onboarding and discovery features for startup profiles on a MERN-based platform, including end-to-end onboarding flows, profile pages with completion-percentage tracking, and advanced startup filtering by industry, team size, target market, and company size.",
+    tags: ["React", "Node.js", "Express.js", "MongoDB", "MERN", "REST API"],
     type: "Full-time",
   },
+
   {
     id: 1,
     title: "Freelance Web Developer",
-    company: "Portfolio Website",
+    company: "Client Portfolio Website",
     location: "Remote",
     period: "Sept 2025",
-    companyUrl: "https://github.com/aleriado", // Add client project URL if available
-    image: "/images/projects/al.png", // Add your project image
+    companyUrl: "https://github.com/aleriado",
+    image: "/images/projects/al.png",
     description:
-      "Delivered a custom portfolio website with modern design and seamless user experience.",
-    responsibilities: [
-      "Built a responsive portfolio website with Next.js showcasing client's work and achievements.",
-      "Designed and implemented custom UI components matching client's brand identity.",
-      "Optimized website performance achieving 95+ Lighthouse scores across all metrics.",
-      "Deployed and maintained the application with continuous integration and monitoring.",
-    ],
-    tags: ["Next.js", "React", "Stripe", "MongoDB", "Vercel"],
+      "Delivered a custom portfolio website using Next.js with a responsive layout, custom UI components aligned to the client’s brand, performance optimizations achieving high Lighthouse scores, and production deployment with ongoing maintenance.",
+    tags: ["Next.js", "React", "Tailwind CSS", "Vercel"],
     type: "Freelance",
+  },
+
+  {
+    id: 2,
+    title: "Frontend Developer",
+    company: "Lernn AI",
+    location: "Remote",
+    period: "Apr 2025 – Jun 2025",
+    companyUrl: "https://www.lernn.ai/",
+    image: "/images/projects/ln-ai.png",
+    description:
+      "Built interactive learning features using Next.js, including a multi-format practice system (MCQs, passages, written responses) and an inline dictionary with hover-based definitions and click-to-speak audio, powered by REST APIs.",
+    tags: ["Next.js", "React", "TypeScript", "REST API", "Tailwind CSS"],
+    type: "Full-time", // change if needed
   },
 ];
 
@@ -194,8 +197,8 @@ const WorkPage = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent" />
 
                   {/* Type Badge */}
-                  <div className="absolute top-4 right-4 bg-indigo-500/20 backdrop-blur-sm border border-indigo-500/50 px-3 py-1 rounded-full">
-                    <span className="text-xs font-semibold text-indigo-300">
+                  <div className="absolute top-4 right-4 bg-gray-300 backdrop-blur-sm border border-indigo-500/50 px-3 py-1 rounded-full">
+                    <span className="text-xs font-semibold text-slate-900">
                       {exp.type}
                     </span>
                   </div>
