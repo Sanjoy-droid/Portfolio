@@ -92,7 +92,7 @@ const Footer = () => {
     {
       icon: (
         <Link
-          href="https://www.linkedin.com/in/sanjoy-guin-bb3153343/"
+          href="https://www.linkedin.com/in/sanjoy-kumar-guin-bb3153343/"
           target="_blank"
           rel="noopener noreferrer"
         >

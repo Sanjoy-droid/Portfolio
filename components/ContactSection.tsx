@@ -52,7 +52,7 @@ const ContactSection = () => {
                     <Github className="h-4 w-4 sm:h-5 sm:w-5" />
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/sanjoy-guin-bb3153343/"
+                    href="https://www.linkedin.com/in/sanjoy-kumar-guin-bb3153343/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="rounded-lg bg-gray-800/50 p-2 text-gray-400 transition-all duration-300 hover:bg-gray-800 hover:text-white"
