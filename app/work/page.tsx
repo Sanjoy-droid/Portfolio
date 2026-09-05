@@ -18,11 +18,18 @@ const experiences = [
     company: "feature101",
     location: "Remote",
     period: "2026 – Present",
-    companyUrl: "https://feature101.dev",
+    companyUrl: "https://www.feature101.dev",
     image: "/images/projects/feature101.png",
     description:
-      "Built and shipped a shadcn/ui-inspired CLI platform for Next.js as a solo micro SaaS. Scaffolds full-stack feature primitives — component, hook, Zustand store, server action, Prisma model, and types — into any Next.js project with a single command, backed by a public feature registry and docs site.",
-    tags: ["Next.js", "TypeScript", "Prisma", "CLI", "Micro SaaS", "Zustand"],
+      "A registry of production-ready, full-stack feature primitives for Next.js — auth, payments, AI, booking, and more. Each primitive is a complete vertical slice (component, hook, Zustand store, server action, Prisma model) that installs with one command and is yours to own, no runtime dependency. Built on shadcn/ui, backed by a public docs and registry site.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "Zustand",
+      "Full-Stack Primitives",
+      "Micro SaaS",
+    ],
     type: "Founder",
   },
   {
