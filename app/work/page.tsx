@@ -13,19 +13,31 @@ import Footer from "@/components/Footer";
 
 const experiences = [
   {
+    id: -1,
+    title: "Founder & Developer",
+    company: "feature101",
+    location: "Remote",
+    period: "2026 – Present",
+    companyUrl: "https://feature101.dev",
+    image: "/images/projects/feature101.png",
+    description:
+      "Built and shipped a shadcn/ui-inspired CLI platform for Next.js as a solo micro SaaS. Scaffolds full-stack feature primitives — component, hook, Zustand store, server action, Prisma model, and types — into any Next.js project with a single command, backed by a public feature registry and docs site.",
+    tags: ["Next.js", "TypeScript", "Prisma", "CLI", "Micro SaaS", "Zustand"],
+    type: "Founder",
+  },
+  {
     id: 0,
     title: "Fullstack Developer",
     company: "Bloomr World",
     location: "Remote",
     period: "Dec 2025 – Present",
-    companyUrl: "https://www.bloomr.world/",
+    companyUrl: "https://github.com/Beyinc/Beyinc_frontend/",
     image: "/images/projects/bloomr-world(1).png",
     description:
       "Built core onboarding and discovery features for startup profiles on a MERN-based platform, including end-to-end onboarding flows, profile pages with completion-percentage tracking, and advanced startup filtering by industry, team size, target market, and company size.",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "MERN", "REST API"],
     type: "Full-time",
   },
-
   {
     id: 1,
     title: "Freelance Web Developer",
@@ -35,11 +47,10 @@ const experiences = [
     companyUrl: "https://github.com/aleriado",
     image: "/images/projects/al.png",
     description:
-      "Delivered a custom portfolio website using Next.js with a responsive layout, custom UI components aligned to the client’s brand, performance optimizations achieving high Lighthouse scores, and production deployment with ongoing maintenance.",
+      "Delivered a custom portfolio website using Next.js with a responsive layout, custom UI components aligned to the client's brand, performance optimizations achieving high Lighthouse scores, and production deployment with ongoing maintenance.",
     tags: ["Next.js", "React", "Tailwind CSS", "Vercel"],
     type: "Freelance",
   },
-
   {
     id: 2,
     title: "Frontend Developer",
@@ -51,7 +62,7 @@ const experiences = [
     description:
       "Built interactive learning features using Next.js, including a multi-format practice system (MCQs, passages, written responses) and an inline dictionary with hover-based definitions and click-to-speak audio, powered by REST APIs.",
     tags: ["Next.js", "React", "TypeScript", "REST API", "Tailwind CSS"],
-    type: "Full-time", // change if needed
+    type: "Full-time",
   },
 ];
 
@@ -75,24 +86,6 @@ const projects = [
     demo: "https://the-univillage.vercel.app/",
     date: "Mar 25",
   },
-  /* {
-    id: 1,
-    title: "SocioCart",
-    description:
-      "SocioCart is a clean, modern e-commerce frontend built in Next.js using Tailwind and shadcn/ui. It uses the FakeStore API (no real backend, DB, or auth) and showcases advanced filtering, sorting, responsive UI, and a local-only cart — perfect as a portfolio-ready demo store.",
-    tags: [
-      "Next.js",
-      "JavaScript",
-      "Shadcn UI",
-      "Tailwind CSS",
-      "FakeStore API",
-      "Lucide-React",
-    ],
-    image: "/images/projects/scart.png",
-    github: "https://github.com/Sanjoy-droid/SocioCart",
-    demo: "https://sociocart.vercel.app/",
-    date: "May 25",
-  }, */
   {
     id: 1,
     title: "Brain Buddy AI",
@@ -110,28 +103,28 @@ const projects = [
     demo: "https://brain-buddy-eight.vercel.app/",
     date: "June 25",
   },
-  {
-    id: 2,
-    title: "Zomato Clone",
-    description:
-      "A MERN stack application modeled after Zomato. Built with React and Context API for state management. Supports interactive UI components and REST-based backend integration.",
-    tags: ["React", "Context API", "JavaScript", "MERN Stack", "Tailwind CSS"],
-    image: "/images/projects/project-2.png",
-    github: "https://github.com/Sanjoy-droid/Zomato-Clone-using-MERN-Stack",
-    demo: "https://zomato-clone-using-mern-stack.vercel.app/",
-    date: "Feb 25",
-  },
-  {
-    id: 3,
-    title: "CleanPro",
-    description:
-      "A lightweight, conversion-focused Laundry Service landing page built on Next.js 15 and React 19, styled with TailwindCSS 4. The project leans on Turbopack for rapid iteration and minimal build times.",
-    tags: ["Next.js", "JavaScript", "Tailwind CSS", "Lucide-React"],
-    image: "/images/projects/cleanpro.png",
-    github: "https://github.com/Sanjoy-droid/CleanPro",
-    demo: "https://cleanpro-gamma.vercel.app/",
-    date: "Jan 25",
-  },
+  // {
+  //   id: 2,
+  //   title: "Zomato Clone",
+  //   description:
+  //     "A MERN stack application modeled after Zomato. Built with React and Context API for state management. Supports interactive UI components and REST-based backend integration.",
+  //   tags: ["React", "Context API", "JavaScript", "MERN Stack", "Tailwind CSS"],
+  //   image: "/images/projects/project-2.png",
+  //   github: "https://github.com/Sanjoy-droid/Zomato-Clone-using-MERN-Stack",
+  //   demo: "https://zomato-clone-using-mern-stack.vercel.app/",
+  //   date: "Feb 25",
+  // },
+  // {
+  //   id: 3,
+  //   title: "CleanPro",
+  //   description:
+  //     "A lightweight, conversion-focused Laundry Service landing page built on Next.js 15 and React 19, styled with TailwindCSS 4. The project leans on Turbopack for rapid iteration and minimal build times.",
+  //   tags: ["Next.js", "JavaScript", "Tailwind CSS", "Lucide-React"],
+  //   image: "/images/projects/cleanpro.png",
+  //   github: "https://github.com/Sanjoy-droid/CleanPro",
+  //   demo: "https://cleanpro-gamma.vercel.app/",
+  //   date: "Jan 25",
+  // },
   {
     id: 4,
     title: "TreePro",
@@ -144,17 +137,17 @@ const projects = [
     date: "Feb 25",
   },
 
-  {
-    id: 5,
-    title: "Reddit Clone",
-    description:
-      "A full-stack application resembling Reddit, facilitating user interaction through posting and voting. Includes robust authentication and content posting functionalities.",
-    tags: ["React", "JavaScript", "Tailwind CSS", "MERN Stack"],
-    image: "/images/projects/project-4.png",
-    github: "https://github.com/Sanjoy-droid/Reddit-Clone-using-MERN-Stack",
-    demo: "https://reddit-clone-using-mern-stack.vercel.app/",
-    date: "Dec 24",
-  },
+  // {
+  //   id: 5,
+  //   title: "Reddit Clone",
+  //   description:
+  //     "A full-stack application resembling Reddit, facilitating user interaction through posting and voting. Includes robust authentication and content posting functionalities.",
+  //   tags: ["React", "JavaScript", "Tailwind CSS", "MERN Stack"],
+  //   image: "/images/projects/project-4.png",
+  //   github: "https://github.com/Sanjoy-droid/Reddit-Clone-using-MERN-Stack",
+  //   demo: "https://reddit-clone-using-mern-stack.vercel.app/",
+  //   date: "Dec 24",
+  // },
 ];
 
 const WorkPage = () => {
