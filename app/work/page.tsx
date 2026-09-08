@@ -14,7 +14,7 @@ import Footer from "@/components/Footer";
 const experiences = [
   {
     id: -1,
-    title: "Founder & Developer",
+    title: "Full-Stack Developer",
     company: "feature101",
     location: "Remote",
     period: "2026 – Present",
@@ -30,14 +30,14 @@ const experiences = [
       "Full-Stack Primitives",
       "Micro SaaS",
     ],
-    type: "Founder",
+    type: "Independent",
   },
   {
     id: 0,
     title: "Fullstack Developer",
     company: "Bloomr World",
     location: "Remote",
-    period: "Dec 2025 – Present",
+    period: "Dec 2025 – March 2026",
     companyUrl: "https://github.com/Beyinc/Beyinc_frontend/",
     image: "/images/projects/bloomr-world(1).png",
     description:
