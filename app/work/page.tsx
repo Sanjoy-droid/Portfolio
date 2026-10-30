@@ -134,14 +134,21 @@ const projects = [
   // },
   {
     id: 4,
-    title: "TreePro",
+    title: "Cipher_Room_",
     description:
-      "A clean, high-converting Tree Removal business landing page built with Next.js 15, React 19, and TailwindCSS 4. Designed for speed, SEO, and responsiveness using Turbopack for blazing-fast dev builds.",
-    tags: ["Next.js", "JavaScript", "Tailwind CSS", "lucide-react"],
-    image: "/images/projects/tree.png",
-    github: "https://github.com/Sanjoy-droid/TreePro",
-    demo: "https://tree-removal-rust.vercel.app/",
-    date: "Feb 25",
+      "Private, self-destructing realtime chat rooms. Built with Next.js, Elysia, TanStack Query & Upstash Redis.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "TanStack Query",
+      "Elysia",
+      "Redis",
+    ],
+    image: "/images/projects/cipher2.png",
+    github: "https://github.com/Sanjoy-droid/cipher_room_",
+    demo: "https://cipher-room-zeta.vercel.app/",
+    date: "Oct 26",
   },
 
   // {
