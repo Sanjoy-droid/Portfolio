@@ -134,7 +134,7 @@ const projects = [
   // },
   {
     id: 4,
-    title: "Cipher_Room_",
+    title: "Cipher_Room",
     description:
       "Private, self-destructing realtime chat rooms. Built with Next.js, Elysia, TanStack Query & Upstash Redis.",
     tags: [
@@ -145,7 +145,7 @@ const projects = [
       "Elysia",
       "Redis",
     ],
-    image: "/images/projects/cipher2.png",
+    image: "/images/projects/cipher3.png",
     github: "https://github.com/Sanjoy-droid/cipher_room_",
     demo: "https://cipher-room-zeta.vercel.app/",
     date: "Oct 26",
